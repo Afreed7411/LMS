@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+      <!-- header  -->
+      <div class="header">
+        <!-- <div class="menu-toggle">
+            <label for="">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div> -->
+        <div class="logo">
+            <a href="../LMS course pages/index.html"> <img src="logo.jpeg" alt="logo"></a>
+        </div>
+        <div class="search-container">
+                            <div class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <input type="text" id="search" placeholder="Search...">
+        </div>
+        <div class="header-icons">
+            <!-- <span class="fa-solid fa-magnifying-glass"></span>
+             -->
+             
+            <div class="fa-solid fa-cart-shopping"></div>
+            <div class="fa-solid fa-bell"></div>
+            <div class="fa-solid fa-circle-user"></div>
+        </div>
+</div>
+
+
+    <div class="video-section">
+        <div class="heading">
+            <h2>C Programming</h2>
+ </div><br>
+ 
+        <div class="video">
+            <video controls loop muted autoplay src="https://www.frosty-easley.148-113-9-31.plesk.page/build/transcoded/FTonMAT.mp4"></video>
+        </div>
+    </div>
+
+    <!-- <div class="nav_bar">
+    
+                <nav>
+                    <ul>
+                       
+                        <li> <a href="#" onclick="changeContent('')">  Overview</a> </li>
+                        <li> <a href="#" onclick="changeContent('course-content')">  Course content</a> </li>
+                        <li> <a href="#" onclick="changeContent('')">Notes</a> </li>
+                        <li> <a href="#" onclick="changeContent('')">Announcements</a> </li>
+                        <li> <a href="#" onclick="changeContent('review')">Reviews</a> </li>
+                        
+                    </ul>
+                </nav>
+                
+            </div> -->
+
+
+
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('Content')"> content</p>
+        <p class="tab-links" onclick="opentab('Overview')">Overview</p>
+        <p class="tab-links" onclick="opentab('Notes')">Notes</p>
+        <p class="tab-links" onclick="opentab('announcement')">Announcements</p>
+        <p class="tab-links" onclick="opentab('review')">Reviews</p>
+    </div>
+
+    <hr>
+    <div class="tab-contents active-tab" id="Content">
+
+
+
+
+
+
+        <header1>
+            <h1>Course Title</h1>
+        </header>
+       
+        <main>
+            <section id="section1" class="content-section0">
+                <h2>Section 1: Introduction</h2>
+                <p>This is the introduction to the course.</p>
+            </section>
+            <section id="section2" class="content-section0">
+                <h2>Section 2: Lesson 1</h2>
+                <p>This is the content for lesson 1.</p>
+            </section>
+            <section id="section3" class="content-section0">
+                <h2>Section 3: Lesson 2</h2>
+                <p>This is the content for lesson 2.</p>
+            </section>
+        </main>
+        
+        <script>
+            // Smooth scroll when clicking on navigation links
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+    </div>
+
+    </div>
+
+    <div class="tab-contents active-tab" id="Overview">
+
+        <section id="overview">
+            <h2>Course Overview</h2>
+            <p>This course provides a comprehensive introduction to web development, including:</p>
+            <ul>
+                <li>HTML5 and CSS3 for building web pages and styling them.</li>
+                <li>JavaScript and DOM manipulation for interactivity.</li>
+                <li>Responsive web design to create mobile-friendly layouts.</li>
+                <li>Backend development with Node.js for server-side programming.</li>
+                <li>Database management with SQL for storing and retrieving data.</li>
+            </ul>
+        </section>
+    
+        <!-- Rest of your page content goes here -->
+    
+        
+        
+
+    </div>
+
+    <div class="tab-contents active-tab" id="Notes">
+
+        <section id="notes">
+            <h2>Course Notes</h2>
+            <p>This course covers various aspects of web development, including:</p>
+            <ul>
+                <li>HTML5 and CSS3</li>
+                <li>JavaScript and DOM manipulation</li>
+                <li>Responsive web design</li>
+                <li>Backend development with Node.js</li>
+                <li>Database management with SQL</li>
+
+               
+
+            </ul>
+            <a href="html.pdf" class="download-button" download>Download Now</a>
+        </section>
+
+    </div>
+
+
+
+
+
+    <div class="tab-contents" id="announcement">
+        <div class="container5">
+            <div class="profile2">
+                <p> <a href="">Vijay</a> </p>
+
+
+            </div>
+            <span>
+                posted an announcement . 3 months ago
+            </span>
+
+            <div class="information">
+
+
+                <p>
+                    Hello,
+
+                    Are you looking to kickstart your journey into Android app development? Are you eager to gain a
+                    strong foundation in building engaging and interactive mobile applications? Look no further, because
+                    we have just the course for you! <br>
+
+                    Introducing our highly acclaimed course, "Android Fundamentals of Activities for Beginners,"
+                    available exclusively on Udemy. This comprehensive program has been meticulously designed to equip
+                    you with the essential skills and knowledge needed to create robust Android applications using
+                    Activities. <br> <br>
+
+
+
+                    <br>
+
+                    Best regards, <br>
+                    <br>
+                    Vijay Kumar
+                    <br>
+
+                    <br>
+
+                    vijaydino25@gmail.com
+
+
+
+
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="tab-contents" id="review">
+
+
+  <div class="container">
+
+
+            <h2>student feedback</h2>
+
+            <p>4.2</p>
+            <div class="star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star-half-alt"></i>
+
+            </div>
+            <span>Course ratting</span>
+
+
+
+            <div class="review">
+                <p>
+                    Reviews
+                </p>
+                <div class="search">
+                    <input type="search" placeholder="search Reviews">
+                    <i class="fa fa-search"></i>
+                    <div class="filter-ratings">
+                        <span>
+                            <input type="text" placeholder="All ratings">
+                        </span>
+                    </div>
+                </div>
+                <div class="review-msg">
+                    <div class="profile">
+
+
+                    </div>
+                    <p>Afreed Mokashi</p>
+                    <div class="star1">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <div>
+                            <i class="fa-solid fa-thumbs-down" style="color: blue; gap: .5rem;"></i>
+                            <i class="fa-solid fa-thumbs-up" style="color: blue;"></i>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- newsletter section  -->
+    <section class="newsletter">
+        <h1>Subscribe to Newsletter</h1>
+        <div class="input-container">
+            <input type="email" class="email" placeholder="Enter your email">
+            <button type="button" class="subscribe-button">Subscribe</button>
+        </div>
+    </section>
+    <!-- newsletter section ends  -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <h3> About Us</h3>
+                <a href="#">Our Company</a>
+                <a href="#">Our Services</a>
+                <!-- <a href="#">Our Process</a> -->
+                <a href="../term & cond/terms1.html">Terms and Conditions</a>
+            </div>
+
+            <div class="box">
+                <h3>Categories</h3>
+                <a href="#">Web Development</a>
+                <a href="#">Python Programming</a>
+                <a href="#">Digital Marketing</a>
+            </div>
+
+            <div class="box">
+                <h3>Support</h3>
+                <a href="#">Blog</a>
+                <a href="#">Help</a>
+                <a href="#">Get the app</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#"><i class="fa-solid fa-phone icon"></i> +91 797 511 1622</a>
+                <a href="#"><i class="fa-regular fa-envelope icon"></i> company@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-globe icon"></i>@grow4tech.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Social Media Links</h3>
+                <a href="#"><i class="fa-brands fa-instagram icon"></i>@grow4tech</a>
+                <a href="#"><i class="fa-brands fa-x-twitter icon"></i>@grow4tech</a>
+                <a href="#"><i class="fa-brands fa-linkedin-in icon"></i>in/grow4tech</a>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <a href="#" class="logo"><img src="grow4techlogo1.jpg" alt=""></a>
+            <a href="#" class="btn back-to-top">Back to top</a>
+        </div>
+        <div class="copyright">
+            &copy;
+            Copyright 2023 Grow4Tech | All rights reserved.
+        </div>
+
+
+    </section>
+
+    <!-- footer section ends -->
+
+<!-- script for changing the state -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>

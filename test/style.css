@@ -1,0 +1,292 @@
+:root {
+    --blue:rgb(54, 66, 113);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.heading span {
+    color: var(--blue);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 4rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.8rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+    border:.1rem solid #333 ;
+}
+
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    background:#fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    transition: 0.5s;
+}
+
+header .logo {
+    padding:0;
+}
+
+header .logo img {
+    width:7rem;
+}
+
+header .navbar a{
+    font-size:  2rem;
+    padding: 1rem 1.5rem;
+    color: #666;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+}
+
+header .navbar a:hover{
+    color: #fff;
+    background-color:var(--blue);   
+}
+
+
+header .login {
+    display: flex;
+    gap: 20px;
+}
+header .login a {
+    font-size:  2rem;
+    padding: 0.9rem 3.8rem;
+    color: #fff; 
+    border-radius: 30px;
+    background-color: var(--blue);
+    transition: scale 0.2 ease;
+}
+header .login a:hover {
+    color: #666;
+    border: 0.1rem solid var(--blue);
+    background-color: #fff;
+    transition: 0.6s smooth;
+}
+
+
+header #menu-toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+header .fa-right-to-bracket {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+/* Rest of your CSS styles */
+/* ... (Copy the rest of your CSS styles here) */
+
+.head h1{
+    font-size:xx-large;
+    text-align: left;
+    margin-top: 100px;
+}
+.poster-section {
+    background-image: url('poster.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.poster-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.poster-section p{
+    font-size: 20px;
+}
+
+/* Additional CSS for contact cards and form */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contact-card {
+    flex: 0 0 calc(33.3333% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin: 200;
+    font-size: 16px;
+}
+/* ... Previous CSS Code ... */
+
+/* CSS for the contact form container */
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* CSS for the contact form image */
+.contact-form-image {
+    flex: 0 0 calc(50% - 10px);
+    background-image: url('contact.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 450px; /* Adjust the height as needed */
+    margin-right: 20px;
+}
+
+.contact-form-image img {
+    display: none; /* Hide the image element if desired */
+}
+
+/* CSS for the contact form */
+.contact-form {
+    flex: 0 0 calc(50% - 10px);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ... Rest of your CSS ... */
+
+/* Additional CSS for contact form */
+.contact-form {
+    margin-top: 0px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #070c05;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    background-color: palegoldenrod;
+}
+
+.container > h2 {
+
+
+    margin-left: 20px;
+    padding-top: 40px;
+    font-size: 4rem;
+}
+
+.contact-cards {
+    background-color:palegoldenrod ;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+
+    
+    
+
+}
+
+.contact-cards > .contact-card {
+
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    gap: 10px;
+    text-align: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10%;
+
+}
